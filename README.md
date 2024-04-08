@@ -10,4 +10,5 @@ $ python -m unittest discover -v
 
 ## Content of the exercises
 
-- [Basic] `Topic` : Variables, Operators, Loops, String, Numbers, List
+- [x] `Basic's topic` : Variables, Operators, Loops, String, Numbers, List
+- [x] `Input/Output's topic` : `print()` and `input()`, File I/O
