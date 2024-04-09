@@ -62,10 +62,10 @@ Exercise 6: Write all content of a given file into a new file by skipping line n
 
 def read_write_file():
     try:
-        with open("exercises/file.txt") as fp:
+        with open("exercises/files/file.txt") as fp:
             lines = fp.readlines()
 
-        with open("exercises/new_file.txt", "w") as fp:
+        with open("exercises/files/new_file.txt", "w") as fp:
             count = 0
             for line in lines:
                 if count == 4:
@@ -85,7 +85,7 @@ Exercise 7: Check file is empty or not
 
 
 def is_empty_file():
-    return os.stat("exercises/new_file.txt").st_size == 0
+    return os.stat("exercises/files/new_file.txt").st_size == 0
 
 
 """
@@ -94,7 +94,7 @@ Exercise 8: Read line number 4 from the following file
 
 
 def read_4th_line():
-    with open("exercises/new_file.txt", "r") as fp:
+    with open("exercises/files/new_file.txt", "r") as fp:
         for i, line in enumerate(fp.readlines()):
             if i == 3:
                 return line

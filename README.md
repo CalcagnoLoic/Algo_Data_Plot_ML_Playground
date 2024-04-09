@@ -7,6 +7,7 @@
 - [ ] `Loop's topic` : If-else statements, loop, and while loop.
 - [ ] `Function's topic`: Functions arguments, built-in functions.
 - [ ] `String's topic`: String operations and manipulations.
+- [ ] `Data structure's topic`: List, Set, Dictionary, and Tuple operations
  
 
 ## Launch all the tests
