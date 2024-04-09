@@ -6,7 +6,8 @@
 - [ ] `Input/Output's topic` : `print()` and `input()`, File I/O
 - [ ] `Loop's topic` : If-else statements, loop, and while loop.
 - [ ] `Function's topic`: Functions arguments, built-in functions.
-
+- [ ] `String's topic`: String operations and manipulations.
+ 
 
 ## Launch all the tests
 
