@@ -1,4 +1,4 @@
-# python_exercises
+# Python exercises
 
 ## Content of the exercises
 
@@ -8,6 +8,7 @@
 - [ ] `Function's topic`: Functions arguments, built-in functions.
 - [ ] `String's topic`: String operations and manipulations.
 - [ ] `Data structure's topic`: List, Set, Dictionary, and Tuple operations
+- [ ] `List's topic`: List operations and manipulations, list functions, list slicing and list comprehension
  
 
 ## Launch all the tests
