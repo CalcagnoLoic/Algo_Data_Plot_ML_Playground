@@ -1,5 +1,11 @@
 # Python exercises
 
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,vscode" />
+  </a>
+</p>
+
 ## Content of the exercises
 
 - [ ] `Basic's topic` : Variables, Operators, Loops, String, Numbers, List
