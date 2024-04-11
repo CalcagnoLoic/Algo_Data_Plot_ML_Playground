@@ -9,6 +9,7 @@ from exercises.data_structure import *
 from exercises.list import *
 from exercises.dictionary import *
 from exercises.tuple import *
+from exercises.set import *
 
 
 class TestingBasic(unittest.TestCase):
@@ -334,6 +335,51 @@ class TestingTuple(unittest.TestCase):
         self.assertEqual(
             sort_tuple((("a", 23), ("b", 37), ("c", 11), ("d", 29))),
             (("c", 11), ("a", 23), ("d", 29), ("b", 37)),
+        )
+
+
+class TestingSet(unittest.TestCase):
+    def test_add_list_to_set(self):
+        self.assertEqual(
+            add_list_to_set(["Blue", "Green", "Red"], {"Yellow", "Orange", "Black"}),
+            {"Green", "Yellow", "Black", "Orange", "Red", "Blue"},
+        )
+
+    def test_intersection_set(self):
+        self.assertEqual(
+            intersection_set({10, 20, 30, 40, 50}, {30, 40, 50, 60, 70}), {40, 50, 30}
+        )
+
+    def test_union_set(self):
+        self.assertEqual(
+            union_set({10, 20, 30, 40, 50}, {30, 40, 50, 60, 70}),
+            {70, 40, 10, 50, 20, 60, 30},
+        )
+
+    def test_difference_update(self):
+        self.assertEqual(difference_update({10, 20, 30}, {20, 40, 50}), {10, 30})
+
+    def test_remove_items(self):
+        self.assertEqual(remove_items({10, 20, 30, 40, 50}), {40, 50})
+
+    def test_symmetric_difference(self):
+        self.assertEqual(
+            symmetric_diff({10, 20, 30, 40, 50}, {30, 40, 50, 60, 70}), {20, 70, 10, 60}
+        )
+
+    def test_disjoint(self):
+        self.assertEqual(disjoint({10, 20, 30, 40, 50}, {60, 70, 80, 90, 10}), {10})
+
+    def test_symmetric_diff_update(self):
+        self.assertEqual(
+            symmetric_diff_update({10, 20, 30, 40, 50}, {30, 40, 50, 60, 70}),
+            {70, 10, 20, 60},
+        )
+
+    def test_intersection_update(self):
+        self.assertEqual(
+            intersection_update({10, 20, 30, 40, 50}, {30, 40, 50, 60, 70}),
+            {40, 50, 30},
         )
 
 
