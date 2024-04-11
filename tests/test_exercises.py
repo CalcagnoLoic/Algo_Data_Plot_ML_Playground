@@ -7,6 +7,7 @@ from exercises.function import *
 from exercises.string import *
 from exercises.data_structure import *
 from exercises.list import *
+from exercises.dictionary import *
 
 
 class TestingBasic(unittest.TestCase):
@@ -233,6 +234,83 @@ class TestingList(unittest.TestCase):
                 "n",
             ],
         )
+
+
+class TestingDictionary(unittest.TestCase):
+    def test_transform_list_into_dict(self):
+        self.assertEqual(
+            transform_list_into_dict(["Ten", "Twenty", "Thirty"], [10, 20, 30]),
+            {"Ten": 10, "Twenty": 20, "Thirty": 30},
+        )
+
+    def test_merge_dict(self):
+        self.assertEqual(
+            merge_dict(
+                {"Ten": 10, "Twenty": 20, "Thirty": 30},
+                {"Thirty": 30, "Fourty": 40, "Fifty": 50},
+            ),
+            {"Ten": 10, "Twenty": 20, "Thirty": 30, "Fourty": 40, "Fifty": 50},
+        )
+
+    def test_nested_dict(self):
+        sampleDict = {
+            "class": {
+                "student": {"name": "Mike", "marks": {"physics": 70, "history": 80}}
+            }
+        }
+        self.assertEqual(nested_dict(sampleDict), 80)
+
+    def test_initialize_dist(self):
+        self.assertEqual(
+            initialize_dict(
+                ["Kelly", "Emma"], {"designation": "Developer", "salary": 8000}
+            ),
+            {
+                "Kelly": {"designation": "Developer", "salary": 8000},
+                "Emma": {"designation": "Developer", "salary": 8000},
+            },
+        )
+
+    def test_extract_keys(self):
+        sampleDict = {"name": "Kelly", "age": 25, "salary": 8000, "city": "New york"}
+        keys = ["name", "salary"]
+
+        self.assertEqual(
+            extract_keys(sampleDict, keys), {"name": "Kelly", "salary": 8000}
+        )
+
+    def test_delete_keys(self):
+        sampleDict = {"name": "Kelly", "age": 25, "salary": 8000, "city": "New york"}
+        keys = ["name", "salary"]
+
+        self.assertEqual(delete_keys(sampleDict, keys), {"city": "New york", "age": 25})
+
+    def test_check_values(self):
+        self.assertEqual(
+            check_values({"a": 100, "b": 200, "c": 300}, 200),
+            "La valeur '200' est bien présente",
+        )
+        self.assertEqual(check_values({"a": 100, "b": 200, "c": 300}, 20), None)
+
+    def test_min_key(self):
+        sample_dict = {"Physics": 82, "Math": 65, "history": 75}
+
+        self.assertEqual(min_key(sample_dict), "Math")
+
+    def test_update_nested_dictionary(self):
+        sample_dict = {
+            "emp1": {"name": "Jhon", "salary": 7500},
+            "emp2": {"name": "Emma", "salary": 8000},
+            "emp3": {"name": "Brad", "salary": 500},
+        }
+
+        new_dict = {
+            "emp1": {"name": "Jhon", "salary": 7500},
+            "emp2": {"name": "Emma", "salary": 8000},
+            "emp3": {"name": "Brad", "salary": 8500},
+        }
+
+        self.assertEqual(update_nested_dictionary(sample_dict), new_dict)
 
 
 if __name__ == "__main__":

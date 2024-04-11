@@ -15,6 +15,7 @@
 - [ ] `String's topic`: String operations and manipulations.
 - [ ] `Data structure's topic`: List, Set, Dictionary, and Tuple operations
 - [ ] `List's topic`: List operations and manipulations, list functions, list slicing and list comprehension
+- [ ] `Dictionary's topic`: Dictionary operations and manipulations, dictionary functions and dictionary comprehension
  
 
 ## Launch all the tests
