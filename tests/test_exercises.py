@@ -10,6 +10,7 @@ from exercises.list import *
 from exercises.dictionary import *
 from exercises.tuple import *
 from exercises.set import *
+from exercises.oop import *
 
 
 class TestingBasic(unittest.TestCase):
@@ -381,6 +382,39 @@ class TestingSet(unittest.TestCase):
             intersection_update({10, 20, 30, 40, 50}, {30, 40, 50, 60, 70}),
             {40, 50, 30},
         )
+
+
+class TestingOOP(unittest.TestCase):
+    def test_vehicle(self):
+        vehicle_class = Vehicle("car", 80, 24, 20)
+        self.assertEqual(vehicle_class.max_speed, 80)
+        self.assertEqual(vehicle_class.mileage, 24)
+
+    def test_bus(self):
+        bus_class = Bus("bus", 180, 12, 50)
+        self.assertEqual(
+            bus_class.display_attributes(),
+            "Color: White Vehicle Name: bus Speed: 180 Mileage: 12",
+        )
+        self.assertEqual(
+            bus_class.seating_capacity(),
+            "The seating capacity of a bus is 50 passengers",
+        )
+        self.assertEqual(bus_class.fare(), "Total Bus fare is: 5500.0")
+
+    def test_car(self):
+        car_class = Car("Audi Q5", 240, 18, 5)
+        self.assertEqual(
+            car_class.display_attributes(),
+            "Color: White Vehicle Name: Audi Q5 Speed: 240 Mileage: 18",
+        )
+
+    def test_type_object(self):
+        self.assertEqual(type_object(Car("Audi Q5", 240, 18, 5)), Car)
+
+    def test_is_instance(self):
+        bus_class = Bus("bus", 180, 12, 50)
+        self.assertEqual(is_instance(bus_class, Vehicle), True)
 
 
 if __name__ == "__main__":
