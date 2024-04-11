@@ -16,6 +16,7 @@
 - [ ] `Data structure's topic`: List, Set, Dictionary, and Tuple operations
 - [ ] `List's topic`: List operations and manipulations, list functions, list slicing and list comprehension
 - [ ] `Dictionary's topic`: Dictionary operations and manipulations, dictionary functions and dictionary comprehension
+- [ ] `Tuple's topic`: Tuple creation, operations, unpacking of a tuple
  
 
 ## Launch all the tests

@@ -8,6 +8,7 @@ from exercises.string import *
 from exercises.data_structure import *
 from exercises.list import *
 from exercises.dictionary import *
+from exercises.tuple import *
 
 
 class TestingBasic(unittest.TestCase):
@@ -311,6 +312,29 @@ class TestingDictionary(unittest.TestCase):
         }
 
         self.assertEqual(update_nested_dictionary(sample_dict), new_dict)
+
+
+class TestingTuple(unittest.TestCase):
+    def test_reverse_tuple(self):
+        self.assertEqual(reverse_tuple((10, 20, 30, 40, 50)), (50, 40, 30, 20, 10))
+
+    def test_access_value(self):
+        self.assertEqual(access_value(("Orange", [10, 20, 30], (5, 15, 25))), 20)
+
+    def test_swap_tuple(self):
+        self.assertEqual(swap_tuple((11, 22), (99, 88)), ((99, 88), (11, 22)))
+
+    def test_copy_elem(self):
+        self.assertEqual(copy_elem((11, 22, 33, 44, 55, 66)), (44, 55))
+
+    def test_update_tuple(self):
+        self.assertEqual(update_tuple((11, [22, 33], 44, 55)), (11, [222, 33], 44, 55))
+
+    def test_sort_tuple(self):
+        self.assertEqual(
+            sort_tuple((("a", 23), ("b", 37), ("c", 11), ("d", 29))),
+            (("c", 11), ("a", 23), ("d", 29), ("b", 37)),
+        )
 
 
 if __name__ == "__main__":
