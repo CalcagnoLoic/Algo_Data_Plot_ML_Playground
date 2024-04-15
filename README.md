@@ -21,6 +21,11 @@
 - [ ] `OOP's topic`: Object, Classes, Inheritance
 - [ ] `Date and Time's topic`: Date, time, DateTime, Calendar.
 - [ ] `JSON's topic`: JSON creation, manipulation, Encoding, Decoding, and parsing
+- [ ] `Numpy's topic`: Array manipulations, numeric ranges, Slicing, indexing, Searching, Sorting, and splitting
+- [ ] `Pandas' topic`:  Data-frame, Data selection, group-by, Series, sorting, searching, and statistics
+- [ ] `Matplotlib's topic`: Line plot, Style properties, multi-line plot, scatter plot, bar chart, histogram, Pie chart, Subplot, stack plot
+- [ ] `Random data generation's topic`: random module, secrets module, UUID module
+- [ ] `Python database`
   
 
 ## Launch all the tests
