@@ -11,6 +11,7 @@ from exercises.dictionary import *
 from exercises.tuple import *
 from exercises.set import *
 from exercises.oop import *
+from exercises.datetime import *
 
 
 class TestingBasic(unittest.TestCase):
@@ -415,6 +416,22 @@ class TestingOOP(unittest.TestCase):
     def test_is_instance(self):
         bus_class = Bus("bus", 180, 12, 50)
         self.assertEqual(is_instance(bus_class, Vehicle), True)
+
+
+class TestingDatetime(unittest.TestCase):
+    def test_transform_into_datetime(self):
+        self.assertEqual(
+            transform_into_datetime("Feb 25 2020 4:20PM"), "2020-02-25 16:20:00"
+        )
+
+    def test_time_delta(self):
+        self.assertEqual(time_delta(2020, 2, 25), "2020-02-18")
+
+    def test_format_date(self):
+        self.assertEqual(format_date(2020, 2, 25), "Tuesday 25 February 2020")
+
+    def test_find_day_name(self):
+        self.assertEqual(find_day_name(2020, 7, 26), "Sunday")
 
 
 if __name__ == "__main__":
