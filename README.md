@@ -20,7 +20,8 @@
 - [ ] `Set's topic`: Set operations, manipulations, and set functions
 - [ ] `OOP's topic`: Object, Classes, Inheritance
 - [ ] `Date and Time's topic`: Date, time, DateTime, Calendar.
- 
+- [ ] `JSON's topic`: JSON creation, manipulation, Encoding, Decoding, and parsing
+  
 
 ## Launch all the tests
 

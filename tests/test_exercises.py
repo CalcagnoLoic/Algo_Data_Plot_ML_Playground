@@ -12,6 +12,7 @@ from exercises.tuple import *
 from exercises.set import *
 from exercises.oop import *
 from exercises.datetime import *
+from exercises.json_ex import *
 
 
 class TestingBasic(unittest.TestCase):
@@ -432,6 +433,38 @@ class TestingDatetime(unittest.TestCase):
 
     def test_find_day_name(self):
         self.assertEqual(find_day_name(2020, 7, 26), "Sunday")
+
+
+class TestingJSON(unittest.TestCase):
+    def test_extract_key(self):
+        sampleJson = """{"key1": "value1", "key2": "value2"}"""
+        self.assertEqual(extract_key(sampleJson), "value2")
+
+    def test_nested_key(self):
+        sampleJson = {
+            "company": {
+                "employee": {"name": "emma", "payble": {"salary": 7000, "bonus": 800}}
+            }
+        }
+
+        self.assertEqual(nested_key(sampleJson), 7000)
+
+    def test_convert_json_into_object(self):
+        class Vehicle:
+            def __init__(self, name, engine, price):
+                self.name = name
+                self.engine = engine
+                self.price = price
+
+        sampleJson = '{"name": "Toyota Rav4", "engine": "2.5L", "price": 32000}'
+        self.assertEqual(
+            convert_json_into_object(Vehicle, sampleJson),
+            ("Toyota Rav4", "2.5L", 32000),
+        )
+
+    def test_is_valid_json(self):
+        sampleJson = """{ "company":{ "employee":{ "name":"emma", "payble":{ "salary":7000 "bonus":800} } } }"""
+        self.assertEqual(is_valid_json(sampleJson), False)
 
 
 if __name__ == "__main__":
