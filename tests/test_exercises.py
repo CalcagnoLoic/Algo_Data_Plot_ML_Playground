@@ -1,18 +1,18 @@
 import unittest
 from unittest.mock import patch
 
-from exercises.basic import *
-from exercises.input_output import *
-from exercises.function import *
-from exercises.string import *
-from exercises.data_structure import *
-from exercises.list import *
-from exercises.dictionary import *
-from exercises.tuple import *
-from exercises.set import *
-from exercises.oop import *
-from exercises.datetime import *
-from exercises.json_ex import *
+from exercises.algorithmic.basic import *
+from exercises.algorithmic.input_output import *
+from exercises.algorithmic.function import *
+from exercises.algorithmic.string import *
+from exercises.algorithmic.data_structure import *
+from exercises.algorithmic.list import *
+from exercises.algorithmic.dictionary import *
+from exercises.algorithmic.tuple import *
+from exercises.algorithmic.set import *
+from exercises.algorithmic.oop import *
+from exercises.algorithmic.datetime import *
+from exercises.algorithmic.json_ex import *
 
 
 class TestingBasic(unittest.TestCase):
