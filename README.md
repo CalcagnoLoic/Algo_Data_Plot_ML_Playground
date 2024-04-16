@@ -25,7 +25,6 @@
 - [ ] `Pandas' topic`:  Data-frame, Data selection, group-by, Series, sorting, searching, and statistics
 - [ ] `Matplotlib's topic`: Line plot, Style properties, multi-line plot, scatter plot, bar chart, histogram, Pie chart, Subplot, stack plot
 - [ ] `Random data generation's topic`: random module, secrets module, UUID module
-- [ ] `Python database`
   
 
 ## Launch all the tests
