@@ -1,10 +1,18 @@
-# Python Algo_Plot_ML_Playground
+# Python Algo_Data_Plot_ML_Playground
 
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=python,vscode" />
   </a>
 </p>
+
+A multitude of exercises related to different aspects of Python. The purpose of these exercises is to test my current skills as well as to learn new techniques/methods. These exercises come from [pynative](https://pynative.com/) and [w3ressource](https://www.w3resource.com/machine-learning/scikit-learn/iris/index.php)
+
+Among these exercises, the following themes have been tackled:
+- Algorithms on native language elements and storage objects. Aspects such as writing to files and object orientation were also covered.
+- Data manipulation via the well-known [NumPy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/pandas-docs/stable/index.html) packages.
+- Data visualization via the [MatplotLib](https://matplotlib.org/) and [Seaborn](https://seaborn.pydata.org/index.html) packages.
+- Putting machine learning into practice with the famous `iris` dataset. The various classical aspects of analysis were covered: data exploration, data visualization, principal component analysis and training of two simple models: k-NN and logistic regression.
 
 <details><summary><h2>Content of the folder exercises</h2></summary>
 
@@ -53,5 +61,5 @@ Don't forget to select the good interpreter inside VSCode
 From the root of the project : 
 
 ```cmd
-$ python -m unittest discover -v
+$ python -m unittest discover
 ```
