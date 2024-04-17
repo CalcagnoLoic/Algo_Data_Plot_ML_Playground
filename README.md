@@ -1,4 +1,4 @@
-# Python exercises
+# Python Algo_Plot_ML_Playground
 
 <p align="center">
   <a href="https://skillicons.dev">
