@@ -6,7 +6,7 @@
   </a>
 </p>
 
-## Content of the exercises
+<details><summary><h2>Content of the folder exercises</h2></summary>
 
 - [ ] `Basic's topic` : Variables, Operators, Loops, String, Numbers, List
 - [ ] `Input/Output's topic` : `print()` and `input()`, File I/O
@@ -25,7 +25,28 @@
 - [ ] `Pandas' topic`:  Data-frame, Data selection, group-by, Series, sorting, searching, and statistics
 - [ ] `Matplotlib's topic`: Line plot, Style properties, multi-line plot, scatter plot, bar chart, histogram, Pie chart, Subplot, stack plot
 - [ ] `Random data generation's topic`: random module, secrets module, UUID module
-  
+
+</details>
+
+<details><summary><h2>Content of the folder machine_learning</h2></summary>
+
+- [ ] `Exploration's topic` : Data manipulation to understand the dataset
+- [ ] `Visualization's topic` : Data manipulation to generate trend graphs and a PCA
+- [ ] `kNN's topic` : Various manipulations of test and training datasets to work with the kNN model
+- [ ] `Logistic regression's topic`: Data manipulation for logistic regression
+
+</details>
+
+## Launch virtual env and packages
+
+From the root of the project : 
+
+```cmd
+$ source env/Scripts/activate
+$ pip install -r requirements.txt
+```
+
+Don't forget to select the good interpreter inside VSCode
 
 ## Launch all the tests
 
